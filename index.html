@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Threadlane</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+    body {
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+    }
+    nav {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffb347;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #bbb;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    footer {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 1rem;
+      color: #888;
+      margin-top: 4rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div style="font-weight: bold; font-size: 1.5rem;">Threadlane</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Minimalist. Modern. You.</h1>
+    <p>At Threadlane, we create effortlessly stylish t-shirts, cargos, and essentials. Our streamlined design process lets us focus on what matters — great clothes, made simply.</p>
+  </div>
+
+  <footer>
+    © 2025 Threadlane. All rights reserved.
+  </footer>
+</body>
+</html>

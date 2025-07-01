@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - Threadlane</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body { background: #111; color: #fff; font-family: 'Outfit', sans-serif; margin: 0; }
+    nav, footer { background: #1a1a1a; padding: 1rem 2rem; text-align: center; }
+    nav a, footer { color: #888; text-decoration: none; margin: 0 1rem; font-weight: 600; }
+    nav a:hover { color: #ffb347; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+      animation: fadeIn 1s ease;
+    }
+    .product {
+      background: #1a1a1a;
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    .product img {
+      width: 100%; border-radius: 10px; margin-bottom: 1rem;
+    }
+    .product h3 { margin-bottom: 0.5rem; }
+    .product p { color: #bbb; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="products">
+    <div class="product">
+      <img src="ChatGPT Image Jul 1, 2025, 03_03_24 PM.png" alt="Minimal Tee">
+      <h3>Minimal Tee</h3>
+      <p>Sleek, soft, and made for everyday wear.</p>
+    </div>
+    <div class="product">
+      <img src="ChatGPT Image Jul 1, 2025, 03_05_14 PM.png" alt="Urban Cargo">
+      <h3>Urban Cargo</h3>
+      <p>Modern utility meets classic comfort.</p>
+    </div>
+    <div class="product">
+      <img src="Sage Green Minimalist T-shirt Focus.png" alt="Oversized Fit">
+      <h3>Oversized Fit</h3>
+      <p>Relaxed, bold, and built for style.</p>
+    </div>
+  </div>
+
+  <footer>© 2025 Threadlane.</footer>
+</body>
+</html>
